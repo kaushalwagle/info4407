@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Deliv6
 {
-    public class PaymentType
+    public class CardType
     {
         #region Constructors
-        public PaymentType()
+        public CardType()
         {
 
         }
@@ -22,7 +22,7 @@ namespace Deliv6
 
         #region Public Properties
         /// <summary>
-        /// Gets or sets the ID for this PaymentType object.
+        /// Gets or sets the ID for this CardType object.
         /// </summary>
         /// <remarks></remarks>
 
@@ -39,7 +39,7 @@ namespace Deliv6
         }
 
         /// <summary>
-        /// Gets or sets the Name for this PaymentType Obect.
+        /// Gets or sets the Name for this CardType Obect.
         /// </summary>
         /// <remarks></remarks>
 
