@@ -11,7 +11,7 @@ namespace Deliv6
         }
 
         #region Private Variables
-        private int _PersonID;
+        private int _ID;
         private string _FirstName;
         private string _MiddleName;
         private string _LastName;
@@ -22,15 +22,15 @@ namespace Deliv6
         /// <summary>
         /// Gets or sets the ID for this person object.
         /// </summary>
-        public int PersonID
+        public int ID
         {
             get
             {
-                return _PersonID;
+                return _ID;
             }
             set
             {
-                _PersonID = value;
+                _ID = value;
             }
         }
 

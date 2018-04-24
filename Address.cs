@@ -87,11 +87,11 @@ namespace Deliv6
                 {
                     _ZipCode = DAL.GetZipCode(_ZipCodeID);
                 }
-                return _ZipCodeID;
+                return _ZipCode;
             }
             set
             {
-                _ZipCodeID = value;
+                _ZipCode = value;
                 if (value == null)
                 {
                     _ZipCodeID = -1;

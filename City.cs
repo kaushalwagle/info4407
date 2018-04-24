@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Deliv6
 {
-    class City
+    public class City
 
     {
         #region Constructors
@@ -89,7 +89,7 @@ namespace Deliv6
         /// Gets or sets the StateID for this City object.
         /// </summary>
         /// <remarks></remarks>
-        public int CountryID
+        public int StateID
         {
             get
             {
