@@ -1,0 +1,51 @@
+﻿<Window x:Class="Deliv6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Deliv6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="661.111" Width="916.88">
+    <Grid Background="Transparent" Margin="0,0,0,2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="244*" />
+            <ColumnDefinition Width="186*" />
+            <ColumnDefinition Width="479*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Button x:Name="btnShowEmployees" Content="Show All Employees" Click="btnShowEmployees_Click"/>
+            <Button x:Name="btnShowPurchases" Content="Show All Purchases" Click="btnShowPurchases_Click"/>
+            <Button x:Name="btnShowCustomers" Content="Show All Customers" Click="btnShowCustomers_Click"/>
+            <Border>
+                <Grid Margin="0,0,-1,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Column="1" HorizontalAlignment="Right" Content="ID to get:"/>
+                    <TextBox Grid.Column="2" x:Name="txtID"/>
+                    <RadioButton GroupName="GetByID" x:Name="rbEmployee" Grid.Row="1" IsChecked="True" Click="rb_Click">Employee</RadioButton>
+                    <RadioButton GroupName="GetByID" x:Name="rbPurchase" Grid.Row="1" Grid.Column="1" Click="rb_Click">Purchase</RadioButton>
+                    <RadioButton GroupName="GetByID" x:Name="rbCustomer" Grid.Row="1" Grid.Column="2" Click="rb_Click">Customer</RadioButton>
+
+                    <Button x:Name="btnGetByID" Grid.Row="2" Grid.ColumnSpan="3" Content="Get Employee" Click="btnGetByID_Click" Margin="0,0,-1,0"/>
+                </Grid>
+            </Border>
+
+        </StackPanel>
+        <ListBox x:Name="lbOutput" Grid.Column="1" Grid.ColumnSpan="2" SelectionChanged="lbOutput_SelectionChanged" Height="629" VerticalAlignment="Top" Margin="0,0,0,-1">
+            <local:Person FirstName="Bob" MiddleName="Freddy" LastName="Smith"></local:Person>
+            <local:Person FirstName="Jillian" MiddleName="Marisole" LastName="Walterbody"></local:Person>
+
+
+        </ListBox>
+
+    </Grid>
+</Window>
