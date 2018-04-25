@@ -149,6 +149,29 @@ namespace Deliv6
 
 			return retPers;
 		}
+
+		/// <summary>
+		/// Gets a CardType object from database with id.
+		/// </summary>
+		public static CardType GetCardType(int id)
+		{
+			CardType retCardType = null;
+			//TODO: Connect and fill CardType
+			return retCardType;
+		}
+
+		/// <summary>
+		/// Gets Customer object from database with id.
+		/// </summary>
+		/// <param name="id"></param>
+		/// <returns></returns>
+		public static Customer GetCustomer(int id)
+		{
+			Customer retCustomer = null;
+			//TODO: Fill customer from database
+			return retCustomer;
+		}
+
 		#endregion
 
     }
