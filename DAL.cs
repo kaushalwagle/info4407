@@ -171,7 +171,7 @@ namespace Deliv6
 			//TODO: Fill customer from database
 			return retCustomer;
 		}
-
+		
 		#endregion
 
     }
