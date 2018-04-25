@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Deliv6
 {
-   public class Country
+    public class CommssionPercentage
     {
         #region Constructors
-        public Country()
+        public CommssionPercentage()
         {
 
         }
@@ -17,12 +17,12 @@ namespace Deliv6
 
         #region Private Variables
         private int _ID;
-        private string _Name;
+        private float _Percentage;
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// Gets or sets the ID for this Country object.
+        /// Gets or sets the ID for this CommissionPercentage object.
         /// </summary>
         /// <remarks></remarks>
 
@@ -39,19 +39,19 @@ namespace Deliv6
         }
 
         /// <summary>
-        /// Gets or sets the Name for this Country Obect.
+        /// Gets or sets the Percentage for this CommissionPercentage Obect.
         /// </summary>
         /// <remarks></remarks>
 
-        public string Name
+        public float Percentage
         {
             get
             {
-                return _Name;
+                return _Percentage;
             }
             set
             {
-                _Name = value.Trim();
+                _Percentage = value;
             }
         }
         #endregion

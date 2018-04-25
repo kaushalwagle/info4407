@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Deliv6
 {
-   public class Country
+    public class Description
     {
         #region Constructors
-        public Country()
+        public Description()
         {
 
         }
@@ -22,7 +22,7 @@ namespace Deliv6
 
         #region Public Properties
         /// <summary>
-        /// Gets or sets the ID for this Country object.
+        /// Gets or sets the ID for this Description object.
         /// </summary>
         /// <remarks></remarks>
 
@@ -39,7 +39,7 @@ namespace Deliv6
         }
 
         /// <summary>
-        /// Gets or sets the Name for this Country Obect.
+        /// Gets or sets the Name for this Description Obect.
         /// </summary>
         /// <remarks></remarks>
 

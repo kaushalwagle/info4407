@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Deliv6
 {
-   public class Country
+    public class PhoneNumber
     {
         #region Constructors
-        public Country()
+        public PhoneNumber()
         {
 
         }
@@ -17,12 +17,12 @@ namespace Deliv6
 
         #region Private Variables
         private int _ID;
-        private string _Name;
+        private string _Number;
         #endregion
 
         #region Public Properties
         /// <summary>
-        /// Gets or sets the ID for this Country object.
+        /// Gets or sets the ID for this PhoneNumber object.
         /// </summary>
         /// <remarks></remarks>
 
@@ -39,19 +39,19 @@ namespace Deliv6
         }
 
         /// <summary>
-        /// Gets or sets the Name for this Country Obect.
+        /// Gets or sets the Number for this PhoneNumber Obect.
         /// </summary>
         /// <remarks></remarks>
 
-        public string Name
+        public string Number
         {
             get
             {
-                return _Name;
+                return _Number;
             }
             set
             {
-                _Name = value.Trim();
+                _Number = value.Trim();
             }
         }
         #endregion
